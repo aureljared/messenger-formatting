@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Jared Dantis">
+    <title>Messenger Text Formatting</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@aureljared" />
+    <meta name="twitter:title" content="Messenger Text Formatting" />
+    <meta name="twitter:description" content="Learn how to use bold, italics, and more in Messenger." />
+    <meta name="twitter:image" content="https://jared.gq/img/logo.jpg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/media.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jared.gq/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jared.gq/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://jared.gq/favicons/manifest.json">
+    <link rel="mask-icon" href="https://jared.gq/favicons/safari-pinned-tab.svg" color="#207285">
+    <link rel="shortcut icon" href="https://jared.gq/favicons/favicon.ico">
+    <meta name="msapplication-config" content="https://jared.gq/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- App begin -->
+    <div class="header">
+        <a class="noul" href="https://jared.gq"><img src="./images/header.png" alt="Jared Dantis"></a>
+        <h1>Formatting text with<br>Facebook Messenger</h1>
+        <h2><strong>Note:</strong> Right now, this works only on <a href="https://messenger.com/">desktop.</a></h2>
+        <div class="social">
+            <div class="fb-like" data-href="http://by.jared.gq/2v6v7OJ" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+            <div class="fb-share-button" data-href="http://by.jared.gq/2v6v7OJ" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fby.jared.gq%2F2v6v7OJ&amp;src=sdkpreparse">Share</a></div>
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=See%20how%20to%20format%20text%20in%20Messenger%20at%20http%3A%2F%2Fby.jared.gq%2F2v6v7OJ%20%E2%9C%A8" data-size="small">
+            Tweet</a>
+        </div>
+    </div>
+    <div class="section" id="basics">
+        <h1>Bold, italics, strikethrough</h1>
+        <div class="conv">
+            <div class="you"><p>*This text is in bold.*</p></div>
+            <div class="them"><p><strong>This text is in bold.</strong></p></div>
+            <div class="you"><p>_This text is in italics._</p></div>
+            <div class="them"><p><em>This text is in italics.</em></p></div>
+            <div class="you"><p>~This text is in strikethrough.~</p></div>
+            <div class="them"><p><span class="str">This text is in strikethrough.</span></p></div>
+        </div>
+    </div>
+    <div class="section" id="mono">
+        <h1>Monospaced text</h1>
+        <div class="conv">
+            <div class="you"><p>This word is `monospaced.`</p></div>
+            <div class="them"><p>This word is <code>monospaced.</code></p></div>
+            <div class="you"><p>`This line is monospaced.`</p></div>
+            <div class="them"><p><code>This line is monospaced.</code></p></div>
+        </div>
+    </div>
+    <div class="section" id="code">
+        <h1>Syntax highlighting</h1>
+        <h2>The general format is <code>```language &lt;code&gt; ```.</code></h2>
+        <div class="conv">
+            <div class="you">
+                <p>
+                    ```html<br>
+                    &lt;h1&gt;HTML code!&lt;/h1&gt;<br>
+                    ```
+                </p>
+            </div>
+            <div class="them code">
+                <p>
+                    &lt;h1&gt;HTML code!&lt;/h1&gt;
+                </p>
+            </div>
+            <div class="you">
+                <p>
+                    ```php<br>
+                    session_start();<br>
+                    echo "This is PHP code!";<br>
+                    ```
+                </p>
+            </div>
+            <div class="them code">
+                <p>
+                    <code class="fn">session_start</code><code class="pc">();</code><br>
+                    <code class="kw">echo </code><code class="st">"This is PHP code!"</code><code class="pc">;</code>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="tex">
+        <h1><img src="images/TeX_logo.svg"> mathematics syntax</h1>
+        <p>Messenger seems to use<sup><a href="https://www.reddit.com/r/math/comments/6ug91z/facebook_messenger_now_renders_basic_latex/" target="_blank">1</a></sup> KaTeX, so you can follow the commands outlined in <a href="https://github.com/Khan/KaTeX/wiki/Function-Support-in-KaTeX" title="">KaTeX's wiki.</a> There are too many to list here.</p>
+        <div class="conv">
+            <div class="you"><p>$$\frac{1}{\frac{1}{2} - \frac{1}{3}}$$</p></div>
+            <div class="them tex-1"><img src="images/Eqn1.svg" alt=""></div>
+            <div class="you"><p>$$E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}$$</p></div>
+            <div class="them tex-2"><img src="images/Eqn2.svg" alt=""></div>
+            <div class="you"><p>$$\sin 2\alpha = 2 \sin \alpha \cos \alpha$$</p></div>
+            <div class="them tex-3"><img src="images/Eqn3.svg" alt=""></div>
+        </div>
+        <div class="section">
+            <h1>This website is open source!</h1>
+            <p>Have anything to add? Drop by the <a href="http://github.com/aureljared/messenger-formatting" title="GitHub page">GitHub page</a> and start contributing &#x1F601;</p>
+        </div>
+    </div>
+
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Twitter -->
+    <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));</script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-105023016-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
